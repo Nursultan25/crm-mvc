@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>RegisterV2</title>
+    <link th:href = "@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form action="#" th:action="@{/api/v1/user/confirmation}">
+        <fieldset class="container">
+            <legend>Register</legend>
+            <section class="firstname-field">
+            <input autofocus type="text" id="firstName" placeholder="Firstname" name="firstName"><br>
+                <label class="firstname-label" for="firstName">Firstname</label><br>
+                </section>
+
+            <section class="lastname-field">
+            <input type="text" id="lastName" placeholder="Lastname" name="lastName"><br>
+                <label class="lastname-label" for="lastName">Lastname</label><br>
+            </section>
+
+            <section class="email-field">
+            <input type="text" id="email" placeholder="Email" name="email"><br>
+                <label class="email-label" for="email">Email</label><br>
+                </section>
+
+            <section class="phone-field">
+            <input type="text" id="phoneNumber" placeholder="Phone number" name="phoneNumber"><br>
+                <label class="phone-label" for="phoneNumber">Phone number</label><br>
+                </section>
+            <input class="button" type="submit" value="Submit">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

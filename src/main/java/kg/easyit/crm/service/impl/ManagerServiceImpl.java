@@ -19,4 +19,9 @@ public class ManagerServiceImpl implements ManagerService {
                 .INSTANCE
                 .toDto(managerRepository.findById(id).orElseThrow(() -> new RuntimeException()));
     }
+
+    @Override
+    public void save(ManagerDTO managerDTO) {
+        managerRepository.save(ManagerMapper.INSTANCE.toEntity(managerDTO));
+    }
 }

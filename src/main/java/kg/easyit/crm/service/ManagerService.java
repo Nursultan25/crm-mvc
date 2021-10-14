@@ -6,4 +6,5 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ManagerService {
     ManagerDTO getOneById(Long id);
+    void save(ManagerDTO managerDTO);
 }
